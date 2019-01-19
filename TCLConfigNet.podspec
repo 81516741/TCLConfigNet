@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCLConfigNet'
-  s.version          = '0.2.8'
+  s.version          = '0.2.9'
   s.summary          = 'TCL 配网'
 
 

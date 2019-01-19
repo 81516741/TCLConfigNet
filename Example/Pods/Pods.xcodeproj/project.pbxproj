@@ -721,6 +721,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/TCLConfigNet/TCLConfigNet.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_MODULE_NAME = TCLConfigNet;
 				PRODUCT_NAME = TCLConfigNet;
 				SDKROOT = iphoneos;
@@ -820,6 +821,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/TCLConfigNet/TCLConfigNet.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_MODULE_NAME = TCLConfigNet;
 				PRODUCT_NAME = TCLConfigNet;
 				SDKROOT = iphoneos;

@@ -512,6 +512,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCLConfigNet/TCLConfigNet-Prefix.pch";
 				INFOPLIST_FILE = "TCLConfigNet/TCLConfigNet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lingda.configSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +531,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCLConfigNet/TCLConfigNet-Prefix.pch";
 				INFOPLIST_FILE = "TCLConfigNet/TCLConfigNet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lingda.configSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
