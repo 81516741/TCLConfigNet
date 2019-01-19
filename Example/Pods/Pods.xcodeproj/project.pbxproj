@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D0D185AB0D8F15D3E91FB357A257826 /* DeviceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D023E8813E2001DA53FD434A5E99094 /* DeviceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DB90C9D21F3570100572263 /* TCLConfigNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA3C3C72195EF762533570FA33B974C /* TCLConfigNet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14E92DE240F23C254F06D6B3DD710037 /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B21BAD3728F8AC50398BA3D5BE3E1AFD /* DeviceModel.m */; };
+		178E5D17DDFBE8217E6334E573ABFEE4 /* Pods-TCLConfigNet_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF63B383470380828E474C962AE1ADF /* Pods-TCLConfigNet_Example-dummy.m */; };
+		1972D91AD53F1FB10C88D11A73E0A675 /* SearchLocalDeviceTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F2D4CBF3F5049004747961B29F607D8 /* SearchLocalDeviceTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FD935323C4954A4C300577AD79D379D /* ToNetUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D71494D20CF0216484A0388245D8689 /* ToNetUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32DEB144D4AA789047B8501769B95D0F /* DeviceToNetTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E5BB632F51926C3EFA6A382D9293960 /* DeviceToNetTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43D5A35FA8FAD37D6D3E4EB3665A8232 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		4E4FE91675E8A675011BBB179AF010BF /* Pods-TCLConfigNet_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 424A4E18E24503B461970C7B8BE94FCD /* Pods-TCLConfigNet_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		611741C5B01892B7324DF8D2E43C6FCE /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8611D62BE273B1C2022C4CE98026F25C /* GCDAsyncUdpSocket.m */; };
+		6EF49A783FBCA0A9A1CB47E98DB68629 /* SearchLocalDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97EE4B75F15BE5472659DFA157E44E /* SearchLocalDeviceTool.m */; };
+		87E0DBEE13354E96FCC222F227E95A9B /* ToNetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB515E0751949CC41359B3488BFD34BF /* ToNetUtils.m */; };
+		8FB5B832FD86DBDB7386BD4699D4D31B /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F19E6FC47DFCAD510363D488AF69578E /* GCDAsyncSocket.m */; };
+		A40809E4FDA48D46F3A22A24774B252F /* Pods-TCLConfigNet_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D55880676B6E09B1CDCBD13A5458A492 /* Pods-TCLConfigNet_Tests-dummy.m */; };
+		A6A9EAFEA3A018074984B436BAFC0EE2 /* DeviceToNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 184D393EFF58320D0EED93EE8F5CAA62 /* DeviceToNetTool.m */; };
+		A80A25EECC522BF0C4E2987B0904694F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		C1F4F2E17324D3AB5809CCB410D7DBB0 /* Pods-TCLConfigNet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D009422F5F211E7DFC29718EE781C7E /* Pods-TCLConfigNet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C87C03D534ECFF8B4C6034CE0C54D52C /* LocalTclSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC86740EBBFB4CA88FD2C0A0E1C210 /* LocalTclSocketManager.m */; };
+		E5271AD1B47D18908627CF595F2A979A /* LocalUdpSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F168F1EDC97C93CBA0948E401F94E6E1 /* LocalUdpSocketManager.m */; };
+		E60D727C644B37E7D59F8C80FC8E2984 /* TCLConfigNet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F78C8CF0A1C5D5F31B110D92620E1F /* TCLConfigNet-dummy.m */; };
+		E79A46787CEBC744E0CF09915F5F7476 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		FD849BE7962C9D705684755BC6EF1BFA /* TCLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2772267F73F3F61B52F064B2A97CE /* TCLLocationManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07AA2B5D51B3DC26A5D1929C4182AFEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F621B8ADC5191C10EE6251457CC7F7F;
+			remoteInfo = TCLConfigNet;
+		};
+		438250DF2009DD1F6E9D2A330E74686D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC9EAA58DE3534D735844CF7C653EE94;
+			remoteInfo = "Pods-TCLConfigNet_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D009422F5F211E7DFC29718EE781C7E /* Pods-TCLConfigNet_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TCLConfigNet_Example-umbrella.h"; sourceTree = "<group>"; };
+		184D393EFF58320D0EED93EE8F5CAA62 /* DeviceToNetTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DeviceToNetTool.m; path = TCLConfigNet/Classes/ConfigNetSDK/DeviceToNetTool.m; sourceTree = "<group>"; };
+		1AF9917E8B29450624C74B5B5CFB6010 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		21F78C8CF0A1C5D5F31B110D92620E1F /* TCLConfigNet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCLConfigNet-dummy.m"; sourceTree = "<group>"; };
+		232DB4AF4A2E63B6014F6BB54186741A /* LocalUdpSocketManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LocalUdpSocketManager.h; sourceTree = "<group>"; };
+		29A6823AAF645A1BD727668B48B766E6 /* TCLConfigNet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCLConfigNet-prefix.pch"; sourceTree = "<group>"; };
+		2CE5411BD0B4F3B25BF634BD0F4B8032 /* Pods-TCLConfigNet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCLConfigNet_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		36F2772267F73F3F61B52F064B2A97CE /* TCLLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TCLLocationManager.m; sourceTree = "<group>"; };
+		3F6B1BF2BAD52065F1083CCA56D7F760 /* TCLConfigNet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TCLConfigNet.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		424A4E18E24503B461970C7B8BE94FCD /* Pods-TCLConfigNet_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TCLConfigNet_Tests-umbrella.h"; sourceTree = "<group>"; };
+		473E1C802508214BE8A312A57AA73E87 /* Pods-TCLConfigNet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TCLConfigNet_Example.modulemap"; sourceTree = "<group>"; };
+		4AA3C3C72195EF762533570FA33B974C /* TCLConfigNet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCLConfigNet.h; path = TCLConfigNet/Classes/ConfigNetSDK/TCLConfigNet.h; sourceTree = "<group>"; };
+		4D50FF02C06F374A183B29D25DEF58B3 /* TCLLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCLLocationManager.h; sourceTree = "<group>"; };
+		52462EB5432CC27D8855C7A22D0DD776 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		54EFB88415507BEDAF7B8A7EC3B2327D /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		557DD7B0E5ABA280B89CB92156E0DE02 /* Pods-TCLConfigNet_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCLConfigNet_Example-Info.plist"; sourceTree = "<group>"; };
+		5D71494D20CF0216484A0388245D8689 /* ToNetUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ToNetUtils.h; sourceTree = "<group>"; };
+		5F2D4CBF3F5049004747961B29F607D8 /* SearchLocalDeviceTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SearchLocalDeviceTool.h; path = TCLConfigNet/Classes/ConfigNetSDK/SearchLocalDeviceTool.h; sourceTree = "<group>"; };
+		60569D765FCE214FB994832F1B7F780D /* Pods-TCLConfigNet_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCLConfigNet_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E5BB632F51926C3EFA6A382D9293960 /* DeviceToNetTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeviceToNetTool.h; path = TCLConfigNet/Classes/ConfigNetSDK/DeviceToNetTool.h; sourceTree = "<group>"; };
+		6F86ACE256A16B2D96A1D54EA9F1B08C /* TCLConfigNet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCLConfigNet.xcconfig; sourceTree = "<group>"; };
+		791194A53A0D166472F152B77014F88C /* TCLConfigNet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCLConfigNet-umbrella.h"; sourceTree = "<group>"; };
+		7D023E8813E2001DA53FD434A5E99094 /* DeviceModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DeviceModel.h; sourceTree = "<group>"; };
+		8611D62BE273B1C2022C4CE98026F25C /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		869E101D25506DE2D108AB9CD6BDAAA7 /* TCLConfigNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCLConfigNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		905AF2CD45364381725E283D7734BA2B /* TCLConfigNet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TCLConfigNet.modulemap; sourceTree = "<group>"; };
+		A1384062D7F1E1356B092DF276F61348 /* Pods-TCLConfigNet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCLConfigNet_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A2838907B5A7A2159CD8F4C3B8DCE5A3 /* Pods-TCLConfigNet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCLConfigNet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7F2A7C7236C2BECE99E6D6ABB298AA9 /* Pods_TCLConfigNet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCLConfigNet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB002E14137CB2923FC4A75E244D8B96 /* TCLConfigNet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TCLConfigNet-Info.plist"; sourceTree = "<group>"; };
+		AD9A16911148170F8535122A5868DFED /* Pods-TCLConfigNet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCLConfigNet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B21BAD3728F8AC50398BA3D5BE3E1AFD /* DeviceModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DeviceModel.m; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B4DFDB6D779C938E63273F21FD592486 /* Pods-TCLConfigNet_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCLConfigNet_Tests-Info.plist"; sourceTree = "<group>"; };
+		BBF63B383470380828E474C962AE1ADF /* Pods-TCLConfigNet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCLConfigNet_Example-dummy.m"; sourceTree = "<group>"; };
+		BED18B5591B5B2C3DE001D56AAF24CCA /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		C1305C3CD796261B1FEFE006FB2672F6 /* Pods-TCLConfigNet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TCLConfigNet_Tests.modulemap"; sourceTree = "<group>"; };
+		D55880676B6E09B1CDCBD13A5458A492 /* Pods-TCLConfigNet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCLConfigNet_Tests-dummy.m"; sourceTree = "<group>"; };
+		D5FC86740EBBFB4CA88FD2C0A0E1C210 /* LocalTclSocketManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LocalTclSocketManager.m; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DE07800E832104233F4DDC5293DD44BB /* Pods-TCLConfigNet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCLConfigNet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE97EE4B75F15BE5472659DFA157E44E /* SearchLocalDeviceTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SearchLocalDeviceTool.m; path = TCLConfigNet/Classes/ConfigNetSDK/SearchLocalDeviceTool.m; sourceTree = "<group>"; };
+		E3EF2DF92D724AF2FFEF7B2FAF8AF625 /* Pods-TCLConfigNet_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCLConfigNet_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E4F416768240E5A5AD594E6DCE7A63D3 /* LocalTclSocketManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LocalTclSocketManager.h; sourceTree = "<group>"; };
+		F168F1EDC97C93CBA0948E401F94E6E1 /* LocalUdpSocketManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LocalUdpSocketManager.m; sourceTree = "<group>"; };
+		F19E6FC47DFCAD510363D488AF69578E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		F4737363D06DBE528BF230EDF38EE0A7 /* Pods_TCLConfigNet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCLConfigNet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84BEC53B8BAAB57E87C3809817307CF /* Pods-TCLConfigNet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCLConfigNet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB515E0751949CC41359B3488BFD34BF /* ToNetUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ToNetUtils.m; sourceTree = "<group>"; };
+		FCCCD953E0FEC6DC84D481DFB2A52EA5 /* Pods-TCLConfigNet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCLConfigNet_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E7A18E5C012D882997F3B05B72AD1F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A46787CEBC744E0CF09915F5F7476 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96704B3E72E3B3F592DFC4942E9059F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D5A35FA8FAD37D6D3E4EB3665A8232 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC96FB2FB6506F52329EF6AE9877B89F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80A25EECC522BF0C4E2987B0904694F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03EC4A48DB29BDB718AAB5A28C0F6AC0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1AF9917E8B29450624C74B5B5CFB6010 /* LICENSE */,
+				52462EB5432CC27D8855C7A22D0DD776 /* README.md */,
+				3F6B1BF2BAD52065F1083CCA56D7F760 /* TCLConfigNet.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1F99DD08C006CC7A65E87C568596197E /* TCLConfigNet */ = {
+			isa = PBXGroup;
+			children = (
+				4AA3C3C72195EF762533570FA33B974C /* TCLConfigNet.h */,
+				6E5BB632F51926C3EFA6A382D9293960 /* DeviceToNetTool.h */,
+				184D393EFF58320D0EED93EE8F5CAA62 /* DeviceToNetTool.m */,
+				5F2D4CBF3F5049004747961B29F607D8 /* SearchLocalDeviceTool.h */,
+				DE97EE4B75F15BE5472659DFA157E44E /* SearchLocalDeviceTool.m */,
+				E2841D6E7DD8E9386BA81FD60A1022A1 /* CocoaAsyncSocket */,
+				8E1B7B8940BE546AAD24623A107390C8 /* Common */,
+				B5CE8BD50C48C084191A17C7BBE358B3 /* LocalTclManager */,
+				55448EC74C1C19020DCF6A6763B9730B /* LocationManager */,
+				03EC4A48DB29BDB718AAB5A28C0F6AC0 /* Pod */,
+				C8F48C44C7690BDA0D08AD426E9442F4 /* Support Files */,
+				CCAF2A2B2B57F0CB7E36060E8084488D /* UdpSearchDeviceManager */,
+			);
+			name = TCLConfigNet;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		55448EC74C1C19020DCF6A6763B9730B /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				4D50FF02C06F374A183B29D25DEF58B3 /* TCLLocationManager.h */,
+				36F2772267F73F3F61B52F064B2A97CE /* TCLLocationManager.m */,
+			);
+			name = LocationManager;
+			path = TCLConfigNet/Classes/ConfigNetSDK/LocationManager;
+			sourceTree = "<group>";
+		};
+		58875D988FDFE9F0E0CAF92C7E9800B9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A1A480AF476B13EC465CF38211F3C73 /* Pods-TCLConfigNet_Example */,
+				6AE2F534C496E704C173311F50BC0C02 /* Pods-TCLConfigNet_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5A1A480AF476B13EC465CF38211F3C73 /* Pods-TCLConfigNet_Example */ = {
+			isa = PBXGroup;
+			children = (
+				473E1C802508214BE8A312A57AA73E87 /* Pods-TCLConfigNet_Example.modulemap */,
+				60569D765FCE214FB994832F1B7F780D /* Pods-TCLConfigNet_Example-acknowledgements.markdown */,
+				F84BEC53B8BAAB57E87C3809817307CF /* Pods-TCLConfigNet_Example-acknowledgements.plist */,
+				BBF63B383470380828E474C962AE1ADF /* Pods-TCLConfigNet_Example-dummy.m */,
+				E3EF2DF92D724AF2FFEF7B2FAF8AF625 /* Pods-TCLConfigNet_Example-frameworks.sh */,
+				557DD7B0E5ABA280B89CB92156E0DE02 /* Pods-TCLConfigNet_Example-Info.plist */,
+				0D009422F5F211E7DFC29718EE781C7E /* Pods-TCLConfigNet_Example-umbrella.h */,
+				2CE5411BD0B4F3B25BF634BD0F4B8032 /* Pods-TCLConfigNet_Example.debug.xcconfig */,
+				A1384062D7F1E1356B092DF276F61348 /* Pods-TCLConfigNet_Example.release.xcconfig */,
+			);
+			name = "Pods-TCLConfigNet_Example";
+			path = "Target Support Files/Pods-TCLConfigNet_Example";
+			sourceTree = "<group>";
+		};
+		6AE2F534C496E704C173311F50BC0C02 /* Pods-TCLConfigNet_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C1305C3CD796261B1FEFE006FB2672F6 /* Pods-TCLConfigNet_Tests.modulemap */,
+				AD9A16911148170F8535122A5868DFED /* Pods-TCLConfigNet_Tests-acknowledgements.markdown */,
+				A2838907B5A7A2159CD8F4C3B8DCE5A3 /* Pods-TCLConfigNet_Tests-acknowledgements.plist */,
+				D55880676B6E09B1CDCBD13A5458A492 /* Pods-TCLConfigNet_Tests-dummy.m */,
+				B4DFDB6D779C938E63273F21FD592486 /* Pods-TCLConfigNet_Tests-Info.plist */,
+				424A4E18E24503B461970C7B8BE94FCD /* Pods-TCLConfigNet_Tests-umbrella.h */,
+				DE07800E832104233F4DDC5293DD44BB /* Pods-TCLConfigNet_Tests.debug.xcconfig */,
+				FCCCD953E0FEC6DC84D481DFB2A52EA5 /* Pods-TCLConfigNet_Tests.release.xcconfig */,
+			);
+			name = "Pods-TCLConfigNet_Tests";
+			path = "Target Support Files/Pods-TCLConfigNet_Tests";
+			sourceTree = "<group>";
+		};
+		6C7888947F261BF3749FBB7722D3AB8D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F99DD08C006CC7A65E87C568596197E /* TCLConfigNet */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				6C7888947F261BF3749FBB7722D3AB8D /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F349138CE63EEC17A296162251F94004 /* Products */,
+				58875D988FDFE9F0E0CAF92C7E9800B9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E1B7B8940BE546AAD24623A107390C8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7D023E8813E2001DA53FD434A5E99094 /* DeviceModel.h */,
+				B21BAD3728F8AC50398BA3D5BE3E1AFD /* DeviceModel.m */,
+				5D71494D20CF0216484A0388245D8689 /* ToNetUtils.h */,
+				FB515E0751949CC41359B3488BFD34BF /* ToNetUtils.m */,
+			);
+			name = Common;
+			path = TCLConfigNet/Classes/ConfigNetSDK/Common;
+			sourceTree = "<group>";
+		};
+		B5CE8BD50C48C084191A17C7BBE358B3 /* LocalTclManager */ = {
+			isa = PBXGroup;
+			children = (
+				E4F416768240E5A5AD594E6DCE7A63D3 /* LocalTclSocketManager.h */,
+				D5FC86740EBBFB4CA88FD2C0A0E1C210 /* LocalTclSocketManager.m */,
+			);
+			name = LocalTclManager;
+			path = TCLConfigNet/Classes/ConfigNetSDK/LocalTclManager;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8F48C44C7690BDA0D08AD426E9442F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				905AF2CD45364381725E283D7734BA2B /* TCLConfigNet.modulemap */,
+				6F86ACE256A16B2D96A1D54EA9F1B08C /* TCLConfigNet.xcconfig */,
+				21F78C8CF0A1C5D5F31B110D92620E1F /* TCLConfigNet-dummy.m */,
+				AB002E14137CB2923FC4A75E244D8B96 /* TCLConfigNet-Info.plist */,
+				29A6823AAF645A1BD727668B48B766E6 /* TCLConfigNet-prefix.pch */,
+				791194A53A0D166472F152B77014F88C /* TCLConfigNet-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TCLConfigNet";
+			sourceTree = "<group>";
+		};
+		CCAF2A2B2B57F0CB7E36060E8084488D /* UdpSearchDeviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				232DB4AF4A2E63B6014F6BB54186741A /* LocalUdpSocketManager.h */,
+				F168F1EDC97C93CBA0948E401F94E6E1 /* LocalUdpSocketManager.m */,
+			);
+			name = UdpSearchDeviceManager;
+			path = TCLConfigNet/Classes/ConfigNetSDK/UdpSearchDeviceManager;
+			sourceTree = "<group>";
+		};
+		E2841D6E7DD8E9386BA81FD60A1022A1 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				BED18B5591B5B2C3DE001D56AAF24CCA /* GCDAsyncSocket.h */,
+				F19E6FC47DFCAD510363D488AF69578E /* GCDAsyncSocket.m */,
+				54EFB88415507BEDAF7B8A7EC3B2327D /* GCDAsyncUdpSocket.h */,
+				8611D62BE273B1C2022C4CE98026F25C /* GCDAsyncUdpSocket.m */,
+			);
+			name = CocoaAsyncSocket;
+			path = TCLConfigNet/Classes/ConfigNetSDK/CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		F349138CE63EEC17A296162251F94004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7F2A7C7236C2BECE99E6D6ABB298AA9 /* Pods_TCLConfigNet_Example.framework */,
+				F4737363D06DBE528BF230EDF38EE0A7 /* Pods_TCLConfigNet_Tests.framework */,
+				869E101D25506DE2D108AB9CD6BDAAA7 /* TCLConfigNet.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		10FBE4FEE5A48509496398AF608197ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F4F2E17324D3AB5809CCB410D7DBB0 /* Pods-TCLConfigNet_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE9086BD09506AFD0B4818C2E54BC0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E4FE91675E8A675011BBB179AF010BF /* Pods-TCLConfigNet_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2665521DDD7E15E531DAB6599D6236 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB90C9D21F3570100572263 /* TCLConfigNet.h in Headers */,
+				0D0D185AB0D8F15D3E91FB357A257826 /* DeviceModel.h in Headers */,
+				32DEB144D4AA789047B8501769B95D0F /* DeviceToNetTool.h in Headers */,
+				1972D91AD53F1FB10C88D11A73E0A675 /* SearchLocalDeviceTool.h in Headers */,
+				2FD935323C4954A4C300577AD79D379D /* ToNetUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		522F302419EA82C481D4908601B04963 /* Pods-TCLConfigNet_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9B1360644D99D35EDCE1672E79E5C9 /* Build configuration list for PBXNativeTarget "Pods-TCLConfigNet_Tests" */;
+			buildPhases = (
+				2FE9086BD09506AFD0B4818C2E54BC0C /* Headers */,
+				37EF6842D5C63F8619EE661E8EA68EB7 /* Sources */,
+				DC96FB2FB6506F52329EF6AE9877B89F /* Frameworks */,
+				39405ADF44F8BF0FEEFBC407AAB8357B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5468798C35B7F16703F1DBD4C42F6CE /* PBXTargetDependency */,
+			);
+			name = "Pods-TCLConfigNet_Tests";
+			productName = "Pods-TCLConfigNet_Tests";
+			productReference = F4737363D06DBE528BF230EDF38EE0A7 /* Pods_TCLConfigNet_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F621B8ADC5191C10EE6251457CC7F7F /* TCLConfigNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19076070CD33ACFDCE7981310DF5773 /* Build configuration list for PBXNativeTarget "TCLConfigNet" */;
+			buildPhases = (
+				DC2665521DDD7E15E531DAB6599D6236 /* Headers */,
+				8EE5B87BFDCB051B0560534DFA35EFDA /* Sources */,
+				96704B3E72E3B3F592DFC4942E9059F3 /* Frameworks */,
+				7BCE5481EC4D627D56FE6B28C38E5926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCLConfigNet;
+			productName = TCLConfigNet;
+			productReference = 869E101D25506DE2D108AB9CD6BDAAA7 /* TCLConfigNet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC9EAA58DE3534D735844CF7C653EE94 /* Pods-TCLConfigNet_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7AFFB123A534BBF5449D791B167D99 /* Build configuration list for PBXNativeTarget "Pods-TCLConfigNet_Example" */;
+			buildPhases = (
+				10FBE4FEE5A48509496398AF608197ED /* Headers */,
+				DD28685777067D3D99DF8A3C4595C7B4 /* Sources */,
+				3E7A18E5C012D882997F3B05B72AD1F7 /* Frameworks */,
+				C79796E26A31AF8D057593D44497EB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD6B1A3C3C0809616B93B1BFF7E30D57 /* PBXTargetDependency */,
+			);
+			name = "Pods-TCLConfigNet_Example";
+			productName = "Pods-TCLConfigNet_Example";
+			productReference = A7F2A7C7236C2BECE99E6D6ABB298AA9 /* Pods_TCLConfigNet_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F349138CE63EEC17A296162251F94004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC9EAA58DE3534D735844CF7C653EE94 /* Pods-TCLConfigNet_Example */,
+				522F302419EA82C481D4908601B04963 /* Pods-TCLConfigNet_Tests */,
+				8F621B8ADC5191C10EE6251457CC7F7F /* TCLConfigNet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39405ADF44F8BF0FEEFBC407AAB8357B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCE5481EC4D627D56FE6B28C38E5926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79796E26A31AF8D057593D44497EB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37EF6842D5C63F8619EE661E8EA68EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A40809E4FDA48D46F3A22A24774B252F /* Pods-TCLConfigNet_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE5B87BFDCB051B0560534DFA35EFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E92DE240F23C254F06D6B3DD710037 /* DeviceModel.m in Sources */,
+				A6A9EAFEA3A018074984B436BAFC0EE2 /* DeviceToNetTool.m in Sources */,
+				8FB5B832FD86DBDB7386BD4699D4D31B /* GCDAsyncSocket.m in Sources */,
+				611741C5B01892B7324DF8D2E43C6FCE /* GCDAsyncUdpSocket.m in Sources */,
+				C87C03D534ECFF8B4C6034CE0C54D52C /* LocalTclSocketManager.m in Sources */,
+				E5271AD1B47D18908627CF595F2A979A /* LocalUdpSocketManager.m in Sources */,
+				6EF49A783FBCA0A9A1CB47E98DB68629 /* SearchLocalDeviceTool.m in Sources */,
+				E60D727C644B37E7D59F8C80FC8E2984 /* TCLConfigNet-dummy.m in Sources */,
+				FD849BE7962C9D705684755BC6EF1BFA /* TCLLocationManager.m in Sources */,
+				87E0DBEE13354E96FCC222F227E95A9B /* ToNetUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD28685777067D3D99DF8A3C4595C7B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178E5D17DDFBE8217E6334E573ABFEE4 /* Pods-TCLConfigNet_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5468798C35B7F16703F1DBD4C42F6CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TCLConfigNet_Example";
+			target = EC9EAA58DE3534D735844CF7C653EE94 /* Pods-TCLConfigNet_Example */;
+			targetProxy = 438250DF2009DD1F6E9D2A330E74686D /* PBXContainerItemProxy */;
+		};
+		AD6B1A3C3C0809616B93B1BFF7E30D57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TCLConfigNet;
+			target = 8F621B8ADC5191C10EE6251457CC7F7F /* TCLConfigNet */;
+			targetProxy = 07AA2B5D51B3DC26A5D1929C4182AFEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D478154F83EEEF44BBAE868F81F8E16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1384062D7F1E1356B092DF276F61348 /* Pods-TCLConfigNet_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TCLConfigNet_Example/Pods-TCLConfigNet_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TCLConfigNet_Example/Pods-TCLConfigNet_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE01AF5D395AE305A54D518A9B774D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C02AAF5FBFC6356148ED127B61606F19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCCD953E0FEC6DC84D481DFB2A52EA5 /* Pods-TCLConfigNet_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TCLConfigNet_Tests/Pods-TCLConfigNet_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TCLConfigNet_Tests/Pods-TCLConfigNet_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D13EF5887DAEF0647C52BAB5E88CEE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F86ACE256A16B2D96A1D54EA9F1B08C /* TCLConfigNet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TCLConfigNet/TCLConfigNet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TCLConfigNet/TCLConfigNet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TCLConfigNet/TCLConfigNet.modulemap";
+				PRODUCT_MODULE_NAME = TCLConfigNet;
+				PRODUCT_NAME = TCLConfigNet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D636BE07E1D5B2B50A3A1E82812625D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE07800E832104233F4DDC5293DD44BB /* Pods-TCLConfigNet_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TCLConfigNet_Tests/Pods-TCLConfigNet_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TCLConfigNet_Tests/Pods-TCLConfigNet_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA04786F3531530D865DE6F01E06BC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE5411BD0B4F3B25BF634BD0F4B8032 /* Pods-TCLConfigNet_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TCLConfigNet_Example/Pods-TCLConfigNet_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TCLConfigNet_Example/Pods-TCLConfigNet_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F97DE75384E9871F6F8EC8F97E5F7BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F86ACE256A16B2D96A1D54EA9F1B08C /* TCLConfigNet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TCLConfigNet/TCLConfigNet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TCLConfigNet/TCLConfigNet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TCLConfigNet/TCLConfigNet.modulemap";
+				PRODUCT_MODULE_NAME = TCLConfigNet;
+				PRODUCT_NAME = TCLConfigNet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */,
+				BE01AF5D395AE305A54D518A9B774D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7AFFB123A534BBF5449D791B167D99 /* Build configuration list for PBXNativeTarget "Pods-TCLConfigNet_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA04786F3531530D865DE6F01E06BC3C /* Debug */,
+				1D478154F83EEEF44BBAE868F81F8E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19076070CD33ACFDCE7981310DF5773 /* Build configuration list for PBXNativeTarget "TCLConfigNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13EF5887DAEF0647C52BAB5E88CEE38 /* Debug */,
+				F97DE75384E9871F6F8EC8F97E5F7BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9B1360644D99D35EDCE1672E79E5C9 /* Build configuration list for PBXNativeTarget "Pods-TCLConfigNet_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D636BE07E1D5B2B50A3A1E82812625D8 /* Debug */,
+				C02AAF5FBFC6356148ED127B61606F19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

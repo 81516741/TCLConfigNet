@@ -1,0 +1,16 @@
+PODS:
+  - TCLConfigNet (0.1.9)
+
+DEPENDENCIES:
+  - TCLConfigNet (from `../`)
+
+EXTERNAL SOURCES:
+  TCLConfigNet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TCLConfigNet: 83e625686055c644134c02f4a0d85afaeab1fc0e
+
+PODFILE CHECKSUM: 4dc6af1ad961e6cd7a11f4fef13b9707fecce1dc
+
+COCOAPODS: 1.6.0.beta.2

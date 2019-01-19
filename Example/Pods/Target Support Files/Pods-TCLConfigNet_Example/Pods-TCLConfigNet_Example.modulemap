@@ -1,0 +1,6 @@
+framework module Pods_TCLConfigNet_Example {
+  umbrella header "Pods-TCLConfigNet_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

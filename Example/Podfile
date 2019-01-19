@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'TCLConfigNet_Example' do
+  pod 'TCLConfigNet', :path => '../'
+
+  target 'TCLConfigNet_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
