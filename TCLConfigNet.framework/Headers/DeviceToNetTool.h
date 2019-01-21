@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger){
 + (BOOL)isDeviceHotpot:(NSString *)maybeDeviceHotpot;
 + (NSString *)deviceWifiHotName;//设备热点
 /**
- * 会否打印 默认YES
+ * 会否打印 默认NO
  */
 + (void)enableLog:(BOOL)enable;
 #pragma mark - Wifi设备配网
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger){
 /**
  * 配网Step:3，发送wifiName和password
  */
-+ (void)sendWifiNameAndPassword:(NSString *)sendMsg result:(BOOL(^)(NSString * msgInfo))result;
++ (void)sendWifiNameAndPassword:(void(^)(DeviceToNetPerStepState state))result;
 /**
  * 配网Step:4，重连原来wifi的检测  isConnectedBlock返回的是当前tcp是否连接上了服务器
  */
