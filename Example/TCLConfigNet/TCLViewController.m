@@ -20,7 +20,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 }
 
 - (IBAction)stopConfiNet:(id)sender {
@@ -58,8 +57,9 @@
     
 }
 - (IBAction)click:(id)sender {
-//    [DeviceToNetTool saveWifiNameAndPassword:@"TP-3F-APP" password:@"tcl12345"];
-    [DeviceToNetTool saveWifiNameAndPassword:self.countLabel.text password:self.passwordLabel.text];
+    [DeviceToNetTool saveWifiNameAndPassword:@"TP-3F-APP" password:@"tcl12345"];
+//    [DeviceToNetTool saveWifiNameAndPassword:self.countLabel.text password:self.passwordLabel.text];
+    [DeviceToNetTool enableLog:YES];
     [self configDeviceToNetStep1];
 }
 
@@ -94,17 +94,14 @@
 - (void)configDeviceToNetStep3 {
     NSLog(@"-------发送路由器信息");
     self.desLabel.text = @"发送路由器信息...";
-    NSString * msg = [NSString stringWithFormat:@"<setReq><ssid>%@</ssid><password>%@</password><setReq>",[DeviceToNetTool deviceToNetWifiName],[DeviceToNetTool deviceToNetWifiPassword]];
-    [DeviceToNetTool sendWifiNameAndPassword:msg result:^BOOL(NSString * resultMsg) {
-        if ([resultMsg containsString:@"<setReqAck><errcode>1</errcode></setReqAck>"]) {
+    [DeviceToNetTool sendWifiNameAndPassword:^(DeviceToNetPerStepState state) {
+        if (state == DeviceToNetPerStepStateSuccess) {
             self.desLabel.text = @"发送路由器SSID和密码给设备成功";
             NSLog(@"-----发送路由器SSID和密码给设备成功");
             [self configDeviceToNetStep4];
-            return YES;
         } else {
             NSLog(@"-----发送路由器SSID和密码给设备失败");
             self.desLabel.text = @"发送路由器SSID和密码给设备失败";
-            return NO;
         }
     }];
 }

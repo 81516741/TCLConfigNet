@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D33795021F562330075788A /* TCLViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D33794F21F562330075788A /* TCLViewController0.m */; };
 		0DB90C3C21EED3B700572263 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB90C3B21EED3B700572263 /* ExternalAccessory.framework */; };
 		0DB90C3F21EED3BF00572263 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB90C3E21EED3BF00572263 /* NetworkExtension.framework */; };
 		49E1C9C682AC0D9B09289A4E /* Pods_TCLConfigNet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957D59F40E7A1ADEC94AA259 /* Pods_TCLConfigNet_Example.framework */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		08D71944CA4ABBB808297217 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0D33794E21F562330075788A /* TCLViewController0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCLViewController0.h; sourceTree = "<group>"; };
+		0D33794F21F562330075788A /* TCLViewController0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLViewController0.m; sourceTree = "<group>"; };
 		0DB90C3B21EED3B700572263 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		0DB90C3D21EED3B700572263 /* TCLConfigNet_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCLConfigNet_Example.entitlements; sourceTree = "<group>"; };
 		0DB90C3E21EED3BF00572263 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
@@ -158,6 +161,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* TCLViewController.h */,
 				6003F5A6195388D20070C39A /* TCLViewController.m */,
+				0D33794E21F562330075788A /* TCLViewController0.h */,
+				0D33794F21F562330075788A /* TCLViewController0.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -377,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* TCLAppDelegate.m in Sources */,
+				0D33795021F562330075788A /* TCLViewController0.m in Sources */,
 				6003F5A7195388D20070C39A /* TCLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

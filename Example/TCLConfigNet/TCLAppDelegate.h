@@ -11,5 +11,6 @@
 @interface TCLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property(nonatomic,assign)NSTimeInterval interval;
+@property (nonatomic , strong) dispatch_source_t timer;
 @end
