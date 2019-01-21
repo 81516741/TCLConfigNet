@@ -37,9 +37,7 @@
 
 - (IBAction)searchWifiDevice:(id)sender {
     self.desLabel.text = @"搜索wifi设备";
-    [SearchLocalDeviceTool configIntervalSendPacket:7];
-    [SearchLocalDeviceTool configEnabelLog:YES];
-    [SearchLocalDeviceTool startSearcheDevice:^(NSArray * deviceInfo) {
+    [SearchLocalDeviceTool startSearcheDevice:nil result:^(NSArray * deviceInfo) {
         self.desLabel.text = [NSString stringWithFormat: @"搜索到 %d 个设备",(int)deviceInfo.count];
         for (DeviceModel * model in deviceInfo) {
             if ([[model.devMac stringByReplacingOccurrencesOfString:@":" withString:@""].uppercaseString containsString:@"45D104"]) {
@@ -47,6 +45,9 @@
             }
         }
     }];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SearchLocalDeviceTool stopSearchDevice];
+    });
 }
 - (IBAction)connectWifi:(id)sender {
     [DeviceToNetTool connectWifi:@"H3C" password:@"test1234"];
