@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCLConfigNet'
-  s.version          = '0.5.81'
+  s.version          = '0.5.82'
   s.summary          = 'TCL 配网'
 
 
@@ -18,7 +18,17 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'Framework/TCLConfigNet.framework'
 
 
+ s.xcconfig = { 'OTHER_LDFLAGS' => '$(inherited)' }
+s.default_subspec = 'Core'
 
+s.subspec 'Core' do |ap|
+  ap.source_files = 'Framework/TCLConfigNet.framework'
+end
+
+s.subspec 'Extension' do |ap|
+  ap.source_files = 'Framework/TCLConfigNet.framework'
+  ap.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited)' }
+end
 
 end
 
