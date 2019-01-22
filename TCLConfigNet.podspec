@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCLConfigNet'
-  s.version          = '0.5.8'
+  s.version          = '0.5.81'
   s.summary          = 'TCL 配网'
 
 
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
 # s.source_files = 'TCLConfigNet/Classes/**/*'
-  s.vendored_frameworks = '/Users/lingda/Library/Developer/Xcode/DerivedData/TCLConfigNet-bmvnklvegcoamzdadjwqzufxooyn/Build/Products/Debug-iphoneos/TCLConfigNet/TCLConfigNet.framework'
+  s.vendored_frameworks = 'Framework/TCLConfigNet.framework'
 
 
 
