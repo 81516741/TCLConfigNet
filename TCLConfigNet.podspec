@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCLConfigNet'
-  s.version          = '0.5.7'
+  s.version          = '0.5.8'
   s.summary          = 'TCL 配网'
 
 
@@ -15,20 +15,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
 # s.source_files = 'TCLConfigNet/Classes/**/*'
-  s.vendored_frameworks = 'TCLConfigNet.framework'
-#s.xcconfig = { 'OTHER_LDFLAGS' => '$(inherited)' }
+  s.vendored_frameworks = '/Users/lingda/Library/Developer/Xcode/DerivedData/TCLConfigNet-bmvnklvegcoamzdadjwqzufxooyn/Build/Products/Debug-iphoneos/TCLConfigNet/TCLConfigNet.framework'
 
 
-s.default_subspec = 'Core'
 
-s.subspec 'Core' do |ap|
-  ap.source_files = 'TCLConfigNet.framework'
-end
-
-s.subspec 'Extension' do |ap|
-  ap.source_files = 'TCLConfigNet.framework'
-  ap.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited)' }
-end
 
 end
 
