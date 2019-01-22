@@ -1,8 +1,7 @@
 
-
 Pod::Spec.new do |s|
   s.name             = 'TCLConfigNet'
-  s.version          = '0.3.7'
+  s.version          = '0.3.8'
   s.summary          = 'TCL 配网'
 
 
@@ -17,5 +16,10 @@ Pod::Spec.new do |s|
 
 # s.source_files = 'TCLConfigNet/Classes/**/*'
   s.vendored_frameworks = 'TCLConfigNet.framework'
+    s do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['OTHER_LDFLAGS'] = '$(inherited)'
+        end
+    end
 
 end
