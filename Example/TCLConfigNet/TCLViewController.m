@@ -21,6 +21,9 @@
 {
     [super viewDidLoad];
 }
+- (IBAction)stopSearch:(id)sender {
+    [SearchLocalDeviceTool stopSearchDevice];
+}
 
 - (IBAction)stopConfiNet:(id)sender {
     [DeviceToNetTool stopDeviceToNetProcess];
@@ -28,7 +31,7 @@
 - (IBAction)subDevice:(id)sender {
     self.desLabel.text = @"开始网关子设备的配网";
     [DeviceToNetTool startSubDeviceToNet:@"2003179" result:^(DeviceModel * device) {
-        self.desLabel.text = device.step;
+        self.desLabel.text = [NSString stringWithFormat:@"%@--%@",device.step,device.tid];
         if (device == nil) {
             self.desLabel.text = @"网关子设备配网超时";
         }
@@ -45,9 +48,6 @@
             }
         }
     }];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [SearchLocalDeviceTool stopSearchDevice];
-    });
 }
 - (IBAction)connectWifi:(id)sender {
     [DeviceToNetTool connectWifi:@"H3C" password:@"test1234"];
@@ -55,7 +55,7 @@
 
 
 - (IBAction)searchNew:(id)sender {
-    
+    [DeviceToNetTool stopSubDeviceToNetProcess];
 }
 - (IBAction)click:(id)sender {
     [DeviceToNetTool saveWifiNameAndPassword:@"TP-3F-APP" password:@"tcl12345"];
