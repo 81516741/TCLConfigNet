@@ -24,11 +24,9 @@
         [self.timer invalidate];
     });
 }
-                  
 - (void)tick {
     NSLog(@"tick");
 }
-
 - (void)dealloc {
     NSLog(@"销毁");
 }
